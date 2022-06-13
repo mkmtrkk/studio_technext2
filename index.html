@@ -7,13 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+    
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+ 
+ 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-   
-
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./style.css">
   
@@ -60,8 +60,8 @@
                   </li>
                 </ul>
                 <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
+                  <input class="form-control me-2" type="search" placeholder="STUDIO GHIBULI" aria-label="Search">
+                  <button class="btn btn-outline-denger" type="submit">SEARCH</button>
                 </form>
               </div>
             </div>
@@ -73,24 +73,36 @@
 
     <main>
 
-        <!-- 名場面スライド -->
-        <div class="container">
-            <ul class="slide-items">
-                <li><img src="./img/photo-1534511902651-6ab0ce131f2a.avif" alt=""></li>
-                <li><img src="" alt=""></li>
-                <li><img src="" alt=""></li>
-                <li><img src="" alt=""></li>
-                <li><img src="" alt=""></li>
-                <li><img src="" alt=""></li>
-            </ul>
-        </div>
+        <!-- 名場面slide -->
+        <h2>ハウルの動く城 名場面</h2>
+
+        <div class="swiper" data-loop="true" data-effect="cube" data-speed="1000"> 
+            
+            <div class="swiper-wrapper"> 
+              <div class="swiper-slide"><img src="https://www.ghibli.jp/gallery/howl017.jpg" alt="名場面1" ></div>
+              <div class="swiper-slide"><img src="https://www.ghibli.jp/gallery/howl043.jpg" alt="名場面2" ></div>
+              <div class="swiper-slide"><img src="https://www.ghibli.jp/gallery/howl016.jpg" alt="名場面3" ></div>
+              <div class="swiper-slide"><img src="https://www.ghibli.jp/gallery/howl025.jpg" alt="名場面4" ></div>
+              <div class="swiper-slide"><img src="https://www.ghibli.jp/gallery/howl040.jpg" alt="名場面5" ></div>
+              <div class="swiper-slide"><img src="https://www.ghibli.jp/gallery/howl033.jpg" alt="名場面6" ></div>
+              <div class="swiper-slide"><img src="https://www.ghibli.jp/gallery/howl039.jpg" alt="名場面7" ></div>
+              <div class="swiper-slide"><img src="https://www.ghibli.jp/gallery/howl042.jpg" alt="名場面8" ></div>
+              <div class="swiper-slide"><img src="https://www.ghibli.jp/gallery/howl046.jpg" alt="名場面9" ></div>
+              <div class="swiper-slide"><img src="https://www.ghibli.jp/gallery/howl050.jpg" alt="名場面10" ></div>
+              <div class="swiper-slide"><img src="https://www.ghibli.jp/gallery/howl026.jpg" alt="名場面11" ></div>
+              <div class="swiper-slide"><img src="https://www.ghibli.jp/gallery/howl027.jpg" alt="名場面12" ></div>
+            </div>
+          </div> 
+        
+        
+
 
         <!-- studio ghibli -->
+        <div class="title"></div>
         <p>studio ghibli</p>
         <h1>ハウルの動く城</h1>
 
-        <!--------------------カード　登場人物紹介 ------------------>
-        <!-- カード -->
+        <!--------------------カード登場人物紹介 ------------------>
         <div class="container">
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col">
@@ -101,9 +113,7 @@
                             <h5 class="card-title">ハウル</h5>
                             <p class="card-text">イケメンの魔法使い。ソフィーを救うなど人思いなところがあり、厳しい状況の中で立ち向かっていこうとする姿が印象的。
                             ソフィーを愛し守る様子がかっこいい。甘えん坊でダメ男。</p>
-                            <a href="https://ja.wikipedia.org/wiki/%E6%9C%A8%E6%9D%91%E6%8B%93%E5%93%89" 
-                        
-                         class="btn btn-primary">木村拓哉</a>
+                            <p>声優</p><a href="https://ja.wikipedia.org/wiki/%E6%9C%A8%E6%9D%91%E6%8B%93%E5%93%89" class="btn btn-primary">木村拓哉</a>
                         </div>
                     </div>
                 </div>
@@ -115,7 +125,7 @@
                             <h5 class="card-title">カルシファー</h5>
                             <p class="card-text">火の悪魔であり、ただの炎。コロコロと表情を変えながら感情表現する様は見ていて飽きません。
                                 お調子者でお茶目、ツンツンしながらも実はハウルのことを心配している愛情深い炎。</p>
-                            <a href="https://ja.wikipedia.org/wiki/%E6%88%91%E4%BF%AE%E9%99%A2%E9%81%94%E4%B9%9F" class="btn btn-primary">我修院達也</a>
+                                <p>声優</p><a href="https://ja.wikipedia.org/wiki/%E6%88%91%E4%BF%AE%E9%99%A2%E9%81%94%E4%B9%9F" class="btn btn-primary">我修院達也</a>
 
                         </div>
                     </div>
@@ -126,7 +136,7 @@
                         <div class="card-body">
                             <h5 class="card-title">ソフィー・ハッター</h5>
                             <p class="card-text">物語を通して優しさを感じられる人物。序盤では優しい理由の中に自信の無さや諦めが入り交じっているが、ハウルたちとの生活や恋心を通して生き抜くたくましさが強まり、本来の優しさが発揮される。</p>
-                            <a href="https://ja.wikipedia.org/wiki/%E5%80%8D%E8%B3%9E%E5%8D%83%E6%81%B5%E5%AD%90" class="btn btn-primary">倍賞千恵子</a>
+                            <p>声優</p><a href="https://ja.wikipedia.org/wiki/%E5%80%8D%E8%B3%9E%E5%8D%83%E6%81%B5%E5%AD%90" class="btn btn-primary">倍賞千恵子</a>
                         </div>
                     </div>
                 </div>
@@ -137,7 +147,7 @@
                         <div class="card-body">
                             <h5 class="card-title">マルクル</h5>
                             <p class="card-text">しっかり者でテキパキ行動でき、魔法の実力も確か。心を完全に開いた相手に対しては素直で優しくて、少し甘えん坊な素顔もあるというギャップ。日本語版の声である神木隆之介の表現力が素晴らしい。</p>
-                            <a href="https://ja.wikipedia.org/wiki/%E7%A5%9E%E6%9C%A8%E9%9A%86%E4%B9%8B%E4%BB%8B" class="btn btn-primary">神木隆之介</a>
+                            <p>声優</p><a href="https://ja.wikipedia.org/wiki/%E7%A5%9E%E6%9C%A8%E9%9A%86%E4%B9%8B%E4%BB%8B" class="btn btn-primary">神木隆之介</a>
                         </div>
                     </div>
                 </div>
@@ -148,7 +158,7 @@
                         <div class="card-body">
                             <h5 class="card-title">荒地の魔女</h5>
                             <p class="card-text">悪役として登場しましたが、中盤に魔力のほとんどを奪われてしまい、ヨボヨボのおばあちゃんになってしまう。中盤から終盤にかけては、お婆ちゃんの貫禄を見せてくれます。</p>
-                            <a href="https://ja.wikipedia.org/wiki/%E7%BE%8E%E8%BC%AA%E6%98%8E%E5%AE%8F" class="btn btn-primary">美輪明宏</a>
+                            <p>声優</p><a href="https://ja.wikipedia.org/wiki/%E7%BE%8E%E8%BC%AA%E6%98%8E%E5%AE%8F#/media/%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB:Akihiro_Miwa_%E7%BE%8E%E8%BC%AA_%E6%98%8E%E5%AE%8F.jpg" class="btn btn-primary">美輪明宏</a>
                         </div>
                     </div>
                 </div>
@@ -159,12 +169,13 @@
                         <div class="card-body">
                             <h5 class="card-title">カブ</h5>
                             <p class="card-text">最初は不気味でよくわからないキャラクターだが、全てが明らかになったとき一番驚かされる。重要な役どころであり、作品を見返す度に魅力が増すキャラクター。</p>
-                            <a href="https://ja.wikipedia.org/wiki/%E5%A4%A7%E6%B3%89%E6%B4%8B" class="btn btn-primary">大泉洋</a>
+                            <p>声優</p><a href="https://ja.wikipedia.org/wiki/%E5%A4%A7%E6%B3%89%E6%B4%8B" class="btn btn-primary">大泉洋</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
 
 
         <!-- モデルにされた国と場面 -->
@@ -263,9 +274,8 @@
     <footer>
             <small>&copy;2022 STUDIO TECHNEXT</small>
     </footer>
-    
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"crossorigin="anonymous"></script>
     <script src="./script.js"></script>
 </body>
