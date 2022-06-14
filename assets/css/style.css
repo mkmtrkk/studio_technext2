@@ -1,8 +1,4 @@
 .flowing {
-  font-family: 'Rock 3D', cursive;
-}
-
-.flowing {
   margin: 0;
   font-size: 50px;
   font-weight: bold;
@@ -36,11 +32,44 @@
 
 .ani_mod {
   text-align: center;
+  margin-bottom: 100px;
 }
 
 #model {
   font-size: 60px;
   font-weight: 800;
+  font-family: 'M PLUS 2', sans-serif;
+  margin: 110px 0 30px;
+  color: #6f3e4b;
+}
+
+#model p {
+  margin-bottom: 70px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #354b57;
+}
+
+.ani, .mod {
+  font-size: 28px;
+  padding: 5px 15px;
+  margin: 30px;
+  color: whitesmoke;
+  background-color: #b34a5c;
+  border: 2px solid;
+}
+
+.pic {
+  padding: 30px;
+  margin: 40px 140px 60px;
+  border: 2px solid;
+  border-color: #fff;
+  background-color: antiquewhite;
 }
 
 #page-top {

@@ -1,9 +1,8 @@
+// body{
+//     background-color: rgb(252, 241, 197);
+// }
+
 // title
-.flowing{
-    font-family: 'Rock 3D', cursive;
-
-}
-
 .flowing {
     margin: 0;
     font-size: 50px;
@@ -16,6 +15,8 @@
     text-align: center;
     margin: 100px 0 50px 0;
     animation: flowing-anim 0.9s;
+//     font-family: 'Rock 3D', cursive; 
+    // font-family: 'Rampart One', cursive;
 }
 
 @keyframes flowing-anim {
@@ -44,11 +45,56 @@
 //モデルにされた国と場面
 .ani_mod{
     text-align: center;
+    margin-bottom: 100px;
 }
 
 #model{
     font-size: 60px;
     font-weight: 800;
+    font-family: 'M PLUS 2', sans-serif;
+    margin: 110px 0 30px;
+    color: rgb(111, 62, 75);
+    // padding: 10px ;
+    // margin: 5px 150px;
+    // color: aliceblue;
+    // background-color: rgb(33, 111, 94);
+    // border: 1px solid;
+    // border-radius: 20px
+
+    p{
+        margin-bottom: 70px;
+        font-size: 15px;
+        font-weight: 500;
+    }
+}
+
+h3{
+    font-size: 40px;
+    font-weight: 700;
+    color: rgb(53, 75, 87);
+    // padding: 10px;
+    // border: 1px solid;
+    // border-radius: 20px
+
+}
+
+.ani,.mod{
+    font-size: 28px;
+    padding: 5px 15px;
+    margin: 30px;
+    // margin: 5px 150px;
+    color: whitesmoke;
+    background-color: #b34a5c;
+    border: 2px solid;
+}
+
+.pic{
+    padding: 30px;
+    margin: 40px 140px 60px;
+    border: 2px solid;
+    border-color: #fff;
+    background-color: antiquewhite;
+
 }
 
 
