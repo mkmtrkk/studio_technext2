@@ -1,23 +1,41 @@
 // title
-h1{
-    font-family: 'Dela Gothic One', cursive;
-    font-size: 120px;
+
+
+
+.flowing {
+	margin: 0;
+	font-size: 50px;
+	font-weight: bold;
+	color: rgb(197, 0, 0);
+	white-space: nowrap;
+	overflow: hidden;
+    font-family: 'Potta One', cursive;
+    font-size: 130px;
     text-align: center;
-    color: rgb(197, 0, 0);
     margin: 100px 0 50px 0;
+	animation: flowing-anim 0.9s;
 }
 
+@keyframes flowing-anim {
+ 0%{
+     width: 0%;
+   }
+100%{
+     width: 100%;
+   }
+}
 
+    
 // 名場面slide
-
 .swiper {
     max-width: 100%;
+    margin: 0;
 }
 
-
-  
-//   カード人物紹介
-
+// navi
+.navbar-brand{
+    font-size: 18px   
+}
 
 
 
