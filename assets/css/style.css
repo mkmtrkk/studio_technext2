@@ -1,7 +1,15 @@
+.model_p {
+  margin-bottom: 70px;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+
 .title {
-  height: 200px;
-  width: 700px;
-  margin: 100px  70px;
+  height: 180px;
+  width: 670px;
+  margin: 50px;
+  margin-left: 360px;
 }
 
 @keyframes flowing-anim {
@@ -12,7 +20,6 @@
     width: 100%;
   }
 }
-
 .swiper {
   max-width: 100%;
   margin: 0;
@@ -25,7 +32,7 @@
 .picture {
   height: 300px;
   width: 600px;
-  transition: opacity .5s ease;
+  transition: opacity 0.5s ease;
   opacity: 1;
   position: absolute;
   left: 50%;
@@ -44,21 +51,13 @@
   text-align: center;
   margin-bottom: 100px;
 }
-
 .ani_mod h2 {
   font-size: 60px;
   font-weight: 800;
-  font-family: 'M PLUS 2', sans-serif;
+  font-family: "M PLUS 2", sans-serif;
   margin: 110px 0 30px;
-  color: #6f3e4b;
+  color: rgb(111, 62, 75);
 }
-
-.ani_mod .model_p {
-  margin-bottom: 70px;
-  font-size: 20px;
-  font-weight: 700;
-}
-
 .ani_mod .pic {
   padding: 30px;
   margin: 40px 140px 60px;
@@ -66,15 +65,13 @@
   border-color: #fff;
   background-color: antiquewhite;
 }
-
 .ani_mod .pic h3 {
   margin-bottom: 30px;
   font-size: 40px;
   font-weight: 700;
-  color: #354b57;
-  font-family: 'M PLUS 2', sans-serif;
+  color: rgb(53, 75, 87);
+  font-family: "M PLUS 2", sans-serif;
 }
-
 .ani_mod .pic .ani, .ani_mod .pic .mod {
   font-size: 28px;
   padding: 5px 15px;
@@ -83,12 +80,10 @@
   background-color: #b34a5c;
   border: 2px solid;
 }
-
 .ani_mod .pic .memo {
   margin-top: 350px;
   font-weight: 600;
 }
-
 .ani_mod .pic .memo4 {
   margin-top: 40px;
   font-weight: 600;
@@ -102,7 +97,6 @@
   line-height: 1;
   z-index: 99;
 }
-
 #page-top a {
   background: rgba(255, 1, 1, 0.769);
   font-size: 22px;
@@ -112,9 +106,8 @@
   text-align: center;
   display: block;
   border-radius: 99px;
-  transition: all .1s ease;
+  transition: all 0.1s ease;
 }
-
 #page-top a:hover {
   opacity: 0.5;
 }
@@ -125,14 +118,13 @@
   overflow: hidden;
   padding: 0;
 }
-
 .follow-me li {
   float: left;
   margin-right: 20px;
   padding: 0;
 }
-
 .follow-me li a::before {
+  -webkit-border-radius: 2px;
   border-radius: 12px;
   color: #fff;
   display: inline-block;
@@ -140,30 +132,26 @@
   font-size: 30px;
   height: 55px;
   line-height: 55px;
-  transition: all .3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   text-align: center;
   width: 55px;
 }
-
 .follow-me li a:hover::before {
   opacity: 0;
 }
-
 .follow-me li a[href*="facebook.com"]::before {
   background-color: #3158ad;
   content: "\f09a";
 }
-
 .follow-me li a[href*="instagram.com"]::before {
   background-color: #a32392;
   content: "\f16d";
 }
-
 .follow-me li a[href*="twitter.com"]::before {
   background-color: #55b5ff;
   content: "\f099";
 }
-
 .follow-me li a[href*="youtube.com"]::before {
   background-color: #c90303;
   content: "\f16a";
@@ -174,5 +162,4 @@ footer {
   padding: 40px;
   background-color: rgba(240, 0, 0, 0.865);
   margin-top: 40px;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

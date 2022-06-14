@@ -3,7 +3,7 @@
 // }
 
 // title
-.flowing {
+// .flowing {
     // margin: 0;
     // font-size: 50px;
     // font-weight: bold;
@@ -17,13 +17,22 @@
     // animation: flowing-anim 0.9s;
     // font-family: 'Rock 3D', cursive; 
     // font-family: 'Rampart One', cursive;
+// }
+
+
+.model_p{
+    margin-bottom: 70px;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
 }
 
 .title{
-    height: 200px;
-    width: 700px;
+    height: 180px;
+    width: 670px;
     // text-align: center;
-    margin: 100px  70px;
+    margin: 50px;
+    margin-left: 360px;
 }
 
 @keyframes flowing-anim {
@@ -88,11 +97,7 @@
         // border-radius: 20px
     }
     
-    .model_p{
-        margin-bottom: 70px;
-        font-size: 20px;
-        font-weight: 700;
-    }
+    
     
     .pic{
         padding: 30px;
