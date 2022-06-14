@@ -4,8 +4,6 @@ $(function () {
 //slide
 const sliderElems = document.getElementsByClassName('swiper');
 
-
-//取得した要素が1以上であればそれぞれの要素に対して以下を実行
 if(sliderElems && sliderElems.length > 0) {
   for ( let element of sliderElems ) {
     let elementSpeed = element.getAttribute('data-speed'),
@@ -18,20 +16,19 @@ if(sliderElems && sliderElems.length > 0) {
         elementSpaceBetween = element.getAttribute('data-space-between'), 
         elementCenteredSlides = element.getAttribute('data-centered-slides');
  
-    //data 属性が設定されていない場合は初期値（デフォルト）を設定及び型を変換
     if (!elementSpeed) {
       elementSpeed = 300;
     }
     if (!elementDirection) {
       elementDirection = 'horizontal';
     }
-    //data-autoplay が設定されていれば値を数値に変換し、設定されていなければ大きな値を設定
+  
     if (elementAutoPlay) {
       elementAutoPlay = parseInt(elementAutoPlay);
     } else {
       elementAutoPlay = 2500;
     }
-    //真偽値の場合は文字列から真偽値に変換
+   
     if (elementLoop == 'true') {
       elementLoop = true;
     } else {
@@ -142,6 +139,21 @@ if(sliderElems && sliderElems.length > 0) {
 
 
 
+
+    // ページTOP
+    var pagetop = $('#page-top');
+    pagetop.hide();
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            pagetop.fadeIn();
+        } else {
+            pagetop.fadeOut();
+        }
+    })
+    pagetop.click(function () {
+        $('body,html').animate({ scrollTop: 0 }, 1000);
+        return false;
+    })
 
 
 
