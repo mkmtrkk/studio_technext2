@@ -1,10 +1,90 @@
 $(function () {
 
 
-    //slide
-    $('.slide-items').slick({
-        'autoplay': true
+//slide
+const sliderElems = document.getElementsByClassName('swiper');
+
+if(sliderElems && sliderElems.length > 0) {
+  for ( let element of sliderElems ) {
+    let elementSpeed = element.getAttribute('data-speed'),
+        elementDirection = element.getAttribute('data-direction'),
+        elementAutoPlay = element.getAttribute('data-autoplay'),
+        elementLoop = element.getAttribute('data-loop'),
+        elementEffect = element.getAttribute('data-effect'),
+        elementSlidesPerView = element.getAttribute('data-slides-per-view'),
+        elementSlidesPerGroup = element.getAttribute('data-slides-per-group'),
+        elementSpaceBetween = element.getAttribute('data-space-between'), 
+        elementCenteredSlides = element.getAttribute('data-centered-slides');
+ 
+    if (!elementSpeed) {
+      elementSpeed = 300;
+    }
+    if (!elementDirection) {
+      elementDirection = 'horizontal';
+    }
+  
+    if (elementAutoPlay) {
+      elementAutoPlay = parseInt(elementAutoPlay);
+    } else {
+      elementAutoPlay = 2500;
+    }
+   
+    if (elementLoop == 'true') {
+      elementLoop = true;
+    } else {
+      elementLoop = false;
+    }
+    if (!elementEffect) {
+      elementEffect = 'slide';
+    }
+    if (!elementSlidesPerView) {
+      elementSlidesPerView = 1;
+    }
+    if (elementCenteredSlides == 'true') {
+      elementCenteredSlides = true;
+    } else {
+      elementCenteredSlides = false;
+    }
+    if (!elementSlidesPerGroup) {
+      elementSlidesPerGroup = 1;
+    }
+    if (!elementSpaceBetween) {
+      elementSpaceBetween = 0;
+    }
+ 
+    //上記パラメータを使って Swiper を初期化
+    let swiperSlider = new Swiper(element, {
+      direction: elementDirection,
+      speed: parseInt(elementSpeed),
+      autoplay: {
+        delay: elementAutoPlay
+      },
+      loop: elementLoop,
+      effect: elementEffect,
+      slidesPerView: parseFloat(elementSlidesPerView),
+      centeredSlides: elementCenteredSlides,
+      slidesPerGroup: parseInt(elementSlidesPerGroup),
+      spaceBetween: parseInt(elementSpaceBetween),
+ 
+      pagination: {
+        el: '.swiper-pagination', //ページネーションの要素
+        type: 'bullets', //ページネーションの種類
+        clickable: true, //クリックに反応させる
+      },
+      
     });
+  }
+}
+
+
+
+
+
+
+
+
+
+
 
 
     //model
@@ -59,6 +139,21 @@ $(function () {
 
 
 
+
+    // ページTOP
+    var pagetop = $('#page-top');
+    pagetop.hide();
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            pagetop.fadeIn();
+        } else {
+            pagetop.fadeOut();
+        }
+    })
+    pagetop.click(function () {
+        $('body,html').animate({ scrollTop: 0 }, 1000);
+        return false;
+    })
 
 
 

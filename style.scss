@@ -1,0 +1,134 @@
+// title
+
+
+
+.flowing {
+    margin: 0;
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(197, 0, 0);
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: 'Potta One', cursive;
+    font-size: 130px;
+    text-align: center;
+    margin: 100px 0 50px 0;
+    animation: flowing-anim 0.9s;
+}
+
+@keyframes flowing-anim {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+
+// 名場面slide
+.swiper {
+    max-width: 100%;
+    margin: 0;
+}
+
+// navi
+.navbar-brand {
+    font-size: 18px
+}
+
+
+
+
+// ページトップに戻る
+#page-top {
+    margin-top: 0%;
+    position: fixed;
+    bottom: 115px;
+    right: 30px;
+    line-height: 1;
+    z-index: 99;
+
+a {
+    background: rgba(255, 1, 1, 0.769);
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.762);
+    width: 80px;
+    padding: 30px 20px;
+    text-align: center;
+    display: block;
+    border-radius: 99px;
+    transition: all .1s ease;
+
+&:hover {
+    opacity: 0.5;
+}
+}
+}
+
+// SNS
+.follow-me {
+    list-style: none;
+    margin-left: 600px;
+    overflow: hidden;
+    padding: 0;
+
+li {
+    float: left;
+    margin-right: 20px;
+    padding: 0;
+
+a {
+    &::before {
+    -webkit-border-radius: 2px;
+    border-radius: 12px;
+    color: #fff;
+    display: inline-block;
+    font-family: FontAwesome;
+    font-size: 30px;
+    height: 55px;
+    line-height: 55px;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    text-align: center;
+    width: 55px;
+    
+}
+
+&:hover::before {
+     opacity: 0;
+}
+
+
+&[href*="facebook.com"]::before {
+    background-color: #3158ad;
+    content: "\f09a";
+}
+
+&[href*="instagram.com"]::before {
+    background-color: #a32392;
+    content: "\f16d";
+}
+
+&[href*="twitter.com"]::before {
+    background-color: #55b5ff;
+    content: "\f099";
+}
+
+&[href*="youtube.com"]::before {
+    background-color: #c90303;
+    content: "\f16a";
+}
+}
+}
+}
+
+// フッター
+footer {
+    text-align: center;
+    padding: 40px;
+    background-color: rgba(240, 0, 0, 0.865);
+    margin-top: 40px;
+
+}
