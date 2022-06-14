@@ -1,15 +1,7 @@
-.flowing {
-  margin: 0;
-  font-size: 50px;
-  font-weight: bold;
-  color: #c50000;
-  white-space: nowrap;
-  overflow: hidden;
-  font-family: 'Potta One', cursive;
-  font-size: 130px;
-  text-align: center;
-  margin: 100px 0 50px 0;
-  animation: flowing-anim 0.9s;
+.title {
+  height: 200px;
+  width: 700px;
+  margin: 100px  70px;
 }
 
 @keyframes flowing-anim {

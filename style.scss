@@ -4,19 +4,26 @@
 
 // title
 .flowing {
-    margin: 0;
-    font-size: 50px;
-    font-weight: bold;
-    color: rgb(197, 0, 0);
-    white-space: nowrap;
-    overflow: hidden;
-    font-family: 'Potta One', cursive;
-    font-size: 130px;
-    text-align: center;
-    margin: 100px 0 50px 0;
-    animation: flowing-anim 0.9s;
-//     font-family: 'Rock 3D', cursive; 
+    // margin: 0;
+    // font-size: 50px;
+    // font-weight: bold;
+    // color: rgb(197, 0, 0);
+    // white-space: nowrap;
+    // overflow: hidden;
+    // font-family: 'Potta One', cursive;
+    // font-size: 130px;
+    // text-align: center;
+    // margin: 100px 0 50px 0;
+    // animation: flowing-anim 0.9s;
+    // font-family: 'Rock 3D', cursive; 
     // font-family: 'Rampart One', cursive;
+}
+
+.title{
+    height: 200px;
+    width: 700px;
+    // text-align: center;
+    margin: 100px  70px;
 }
 
 @keyframes flowing-anim {
