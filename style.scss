@@ -43,59 +43,92 @@
 
 
 //モデルにされた国と場面
+.picture{
+    height: 300px;
+    width: 600px;
+    transition: opacity .5s ease;
+    opacity: 1;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 20px 0 ;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.anime.hide,
+.model.hide{
+    opacity: 0;
+}
+
+
+
 .ani_mod{
     text-align: center;
     margin-bottom: 100px;
-}
 
-#model{
-    font-size: 60px;
-    font-weight: 800;
-    font-family: 'M PLUS 2', sans-serif;
-    margin: 110px 0 30px;
-    color: rgb(111, 62, 75);
-    // padding: 10px ;
-    // margin: 5px 150px;
-    // color: aliceblue;
-    // background-color: rgb(33, 111, 94);
-    // border: 1px solid;
-    // border-radius: 20px
-
-    p{
+    h2{
+        font-size: 60px;
+        font-weight: 800;
+        font-family: 'M PLUS 2', sans-serif;
+        margin: 110px 0 30px;
+        color: rgb(111, 62, 75);
+        // padding: 10px ;
+        // margin: 5px 150px;
+        // color: aliceblue;
+        // background-color: rgb(33, 111, 94);
+        // border: 1px solid;
+        // border-radius: 20px
+    }
+    
+    .model_p{
         margin-bottom: 70px;
-        font-size: 15px;
-        font-weight: 500;
+        font-size: 20px;
+        font-weight: 700;
+    }
+    
+    .pic{
+        padding: 30px;
+        margin: 40px 140px 60px;
+        border: 2px solid;
+        border-color: #fff;
+        background-color: antiquewhite;
+
+        h3{
+            margin-bottom: 30px;
+            font-size: 40px;
+            font-weight: 700;
+            color: rgb(53, 75, 87);
+            font-family: 'M PLUS 2', sans-serif;
+            // padding: 10px;
+            // border: 1px solid;
+            // border-radius: 20px
+        
+        }
+    
+        .ani,.mod{
+            font-size: 28px;
+            padding: 5px 15px;
+            margin: 30px;
+            // margin: 5px 150px;
+            color: whitesmoke;
+            background-color: #b34a5c;
+            border: 2px solid;
+        }
+
+        .memo{
+            margin-top: 350px;
+            font-weight: 600;
+        }
+
+        .memo4{
+            margin-top: 40px;
+            font-weight: 600;
+        }
     }
 }
 
-h3{
-    font-size: 40px;
-    font-weight: 700;
-    color: rgb(53, 75, 87);
-    // padding: 10px;
-    // border: 1px solid;
-    // border-radius: 20px
 
-}
-
-.ani,.mod{
-    font-size: 28px;
-    padding: 5px 15px;
-    margin: 30px;
-    // margin: 5px 150px;
-    color: whitesmoke;
-    background-color: #b34a5c;
-    border: 2px solid;
-}
-
-.pic{
-    padding: 30px;
-    margin: 40px 140px 60px;
-    border: 2px solid;
-    border-color: #fff;
-    background-color: antiquewhite;
-
-}
 
 
 
