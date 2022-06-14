@@ -6,10 +6,10 @@
 }
 
 .title {
-  height: 180px;
-  width: 670px;
-  margin: 50px;
-  margin-left: 360px;
+  display: block;
+  margin: 120px auto 50px;
+  height: 200px;
+  width: 1000px;
 }
 
 @keyframes flowing-anim {
