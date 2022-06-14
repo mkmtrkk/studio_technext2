@@ -116,14 +116,14 @@ if(sliderElems && sliderElems.length > 0) {
         $('.model3').removeClass('hide');
     })
     //pic4
-    $('.aminme_btn4').on('click',function(){
-        $('.anime4').addClass('hide');
-        $('.anime4').removeClass('hide');
-    })
-    $('.model_btn4').on('click',function(){
-        $('.model4').addClass('hide');
-        $('.model4').removeClass('hide');
-    })
+    // $('.aminme_btn4').on('click',function(){
+    //     $('.anime4').addClass('hide');
+    //     $('.anime4').removeClass('hide');
+    // })
+    // $('.model_btn4').on('click',function(){
+    //     $('.model4').addClass('hide');
+    //     $('.model4').removeClass('hide');
+    // })
 
 
 
